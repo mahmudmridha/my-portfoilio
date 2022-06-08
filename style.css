@@ -1,0 +1,1106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); * {
+    margin: 0;
+    padding: 0;
+}
+
+nav.naver {
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(Image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.logo h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-manu ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    list-style: none;
+    position: relative;
+}
+
+.nav-manu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-manu ul li:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+
+.nav-manu ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    position: absolute;
+    transform: translateY(-50px);
+    overflow: hidden;
+}
+
+.content h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: 'Poppins';
+    line-height: 25px;
+    margin: 20px auto;
+    width: 35%;
+}
+
+.contentbutton {
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+contentbutton button {
+    padding: 15px 0;
+    width: 200px;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid #009688;
+    position: relative;
+    color: white;
+    background: #00968700;
+    overflow: hidden;
+}
+
+button span {
+    background: #009688;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.aboutimage {
+    width: 430px;
+    padding-right: 20px;
+    margin-top: -90px;
+    height: 680px;
+}
+
+.aboutimage img {
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.about-aria {
+    width: 670px;
+    padding-left: 20px;
+}
+
+section#single-about-aria {
+    padding: 100px 0;
+}
+
+.about-me {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-me h2 {
+    font-size: 33px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 12px;
+}
+
+.about-me h4 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+    width: 94%;
+}
+
+address ul li {
+    list-style: none;
+    display: inline-block;
+    font-style: normal;
+    font-family: 'Poppins';
+    width: 47%;
+    line-height: 35px;
+}
+
+address ul li p {
+    width: 129px;
+    display: inline;
+}
+
+address ul {
+    padding: 30px 0px;
+}
+
+address ul li span {
+    display: inline;
+    margin-right: 10px;
+}
+
+.aboutbutton a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.aboutbutton button {
+    color: #505050;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    width: 143px;
+}
+
+section#services-aria {
+    padding: 100px 0;
+    background: #f7f7f7;
+}
+
+.servicetitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servicetitle h1 {
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Serviceslist {
+    padding: 0 10px;
+}
+
+.servicetitle p {
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+}
+
+.sservicetitle p {
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    color: #777;
+}
+
+.singleService {
+    width: 343px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    background: #fff;
+    box-shadow: 0px 0px 9px #cdcdcd;
+}
+
+.sservicetitle {
+    padding: 30px;
+    text-align: center;
+}
+
+.sservicetitle span i {
+    font-size: 40px;
+    color: #007BFF;
+    padding: 5px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.sservicetitle h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+section#worktogether {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(Image/hire-area.jpg);
+    background-attachment: fixed;
+}
+
+.work {
+    text-align: center;
+}
+
+.work h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.work p {
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.work span a {
+    text-decoration: none;
+    background: #fff;
+    padding: 9px 35px;
+    border-radius: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #000;
+}
+
+.testmonian {
+    text-align: center;
+}
+
+.testmonian h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 35px;
+}
+
+.testmonialdetls {
+    width: 750px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.testmonialdetls span i {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #007BFF;
+}
+
+.testmonialdetls p {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.claintdetelas {
+    width: 275px;
+    margin: auto;
+}
+
+.image img {
+    width: 60%;
+    border-radius: 100%;
+}
+
+.image {
+    width: 30%;
+    float: left;
+}
+
+.title {
+    width: 45%;
+    float: left;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.title p {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); * {
+    margin: 0;
+    padding: 0;
+}
+
+nav.naver {
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(Image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.logo h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-manu ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    list-style: none;
+    position: relative;
+}
+
+.nav-manu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-manu ul li:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+
+.nav-manu ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    position: absolute;
+    transform: translateY(-50px);
+    overflow: hidden;
+}
+
+.content h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: 'Poppins';
+    line-height: 25px;
+    margin: 20px auto;
+    width: 35%;
+}
+
+.contentbutton {
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.contentbutton button {
+    padding: 15px 0;
+    width: 200px;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid #009688;
+    position: relative;
+    color: white;
+    background: #00968700;
+    overflow: hidden;
+}
+
+button span {
+    background: #009688;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.aboutimage {
+    width: 430px;
+    padding-right: 20px;
+    margin-top: -90px;
+    height: 680px;
+}
+
+.aboutimage img {
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.about-aria {
+    width: 670px;
+    padding-left: 20px;
+}
+
+section#single-about-aria {
+    padding: 100px 0;
+}
+
+.about-me {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-me h2 {
+    font-size: 33px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 12px;
+}
+
+.about-me h4 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+    width: 94%;
+}
+
+address ul li {
+    list-style: none;
+    display: inline-block;
+    font-style: normal;
+    font-family: 'Poppins';
+    width: 47%;
+    line-height: 35px;
+}
+
+address ul li p {
+    width: 129px;
+    display: inline;
+}
+
+address ul {
+    padding: 30px 0px;
+}
+
+address ul li span {
+    display: inline;
+    margin-right: 10px;
+}
+
+.aboutbutton a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.aboutbutton button {
+    color: #505050;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    width: 143px;
+}
+
+section#services-aria {
+    padding: 100px 0;
+    background: #f7f7f7;
+}
+
+.servicetitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servicetitle h1 {
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Serviceslist {
+    padding: 0 10px;
+}
+
+.servicetitle p {
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+}
+
+.sservicetitle p {
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    color: #777;
+}
+
+.singleService {
+    width: 343px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    background: #fff;
+    box-shadow: 0px 0px 9px #cdcdcd;
+}
+
+.sservicetitle {
+    padding: 30px;
+    text-align: center;
+}
+
+.sservicetitle span i {
+    font-size: 40px;
+    color: #007BFF;
+    padding: 5px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.sservicetitle h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+section#worktogether {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(Image/hire-area.jpg);
+    background-attachment: fixed;
+    padding-bottom: 60px;
+}
+
+.work {
+    text-align: center;
+}
+
+.work h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.work p {
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.work span a {
+    text-decoration: none;
+    background: #fff;
+    padding: 9px 35px;
+    border-radius: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #000;
+}
+
+.testmonian {
+    text-align: center;
+}
+
+.testmonian h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 35px;
+}
+
+.testmonialdetls {
+    width: 750px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.testmonialdetls span i {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #007BFF;
+}
+
+.testmonialdetls p {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.claintdetelas {
+    width: 275px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.image img {
+    width: 50%;
+    border-radius: 100%;
+    margin-left: 40px;
+}
+
+.image {
+    width: 32%;
+    float: left;
+    display: inline-block;
+}
+
+.title {
+    width: 48%;
+    float: left;
+    margin: 0;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.title h1 {
+    font-size: 16px;
+    /* margin-top: 4px; */
+    margin-bottom: 0;
+}
+
+.title p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.row-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.single-row-dots {
+    width: 10px;
+    height: 10px;
+    background: #c4c4c4;
+    border: none;
+    border-radius: 100%;
+    margin: 4px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h1 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #777;
+}
+
+.contactfrominfo {
+    overflow: hidden;
+    display: flex;
+}
+
+.contactfrom {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.contactfrom h4 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input.contactFromName {
+    width: 280px;
+    padding: 10px;
+    border: none;
+    font-family: 'Poppins';
+    border-bottom: 1px solid #d3c8c8;
+    margin-right: 10px;
+}
+
+input.contactfromEmail {
+    width: 280px;
+    padding: 10px;
+    border: none;
+    font-family: 'Poppins';
+    display: inline-block;
+    border-bottom: 1px solid #d3c8c8;
+    margin-left: 10px;
+}
+
+.inputNameEmail {
+    width: 600px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+input.contactfromSubject {
+    width: 580px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+    display: inline-block;
+    border-bottom: 1px solid #d3c8c8;
+}
+
+textarea.contactfromMessage {
+    border: none;
+    font-family: 'Poppins';
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d3c8c8;
+    max-width: 580px;
+    display: block;
+    resize: vertical;
+    width: 580px;
+}
+
+.inputNameEmail input:focus {
+    outline: none;
+    border-bottom: 1px solid #007BFF;
+}
+
+input.contactfromSubject:focus {
+    outline: none;
+    border-bottom: 1px solid #007BFF;
+}
+
+textarea.contactfromMessage:focus {
+    outline: none;
+    border-bottom: 1px solid #007fbf;
+}
+
+.contactfrom button {
+    padding: 7px 25px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    background: #007bff;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.contactinfo {
+    width: 500px;
+}
+
+.contactinoTitle h4 {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contactinoTitle p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #777;
+}
+
+.contactinoTitle {
+    margin-bottom: 30px;
+}
+
+.contactIcon {
+    width: 30px;
+    font-size: 25px;
+    color: #007BFF;
+    padding-right: 20px;
+}
+
+.connectme {
+    display: flex;
+    align-items: center;
+}
+
+.contactundstyled ul li {
+    list-style: none;
+}
+
+.conntecttitle {
+    padding: 13px 0px 10px 20px;
+    width: 80%;
+    border-left: 2px solid rgba(214, 214, 214, .5 );
+}
+
+.conntecttitle h4 {
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+}
+
+.conntecttitle p {
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.contactundstyled ul li:first-child .conntecttitle {
+    padding-top: 0;
+}
+
+.contactundstyled ul li:last-child .conntecttitle {
+    padding-bottom: 0;
+}
+
+.main-footer {
+    display: flex;
+}
+
+.single-f-info {
+    width: 285px;
+}
+
+.single-f-info h5 {
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.single-f-info ul li {
+    list-style: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.single-f-info ul li a {
+    text-decoration: none;
+    color: #9e9e9e;
+}
+
+footer {
+    background: #222222;
+    padding: 100px 0 0;
+}
+
+.single-f-info h1 {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.single-f-info p {
+    color: #ccc;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.main-footer:first-child {
+    padding-bottom: 70px;
+    border-bottom: 2px solid rgba(85, 85, 85, .15);
+}
+
+.main-footer:last-child {
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrightinfo p {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.copyrightinfo a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.socialmidea a {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.socialmidea a .fa-facebook-f {
+    background: #4267B2;
+    padding: 6px;
+    color: #fff;
+    border-radius: 101%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.socialmidea a .fa-twitter {
+    background: #00acee;
+    padding: 6px;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.socialmidea a .fa-github {
+    background: #7534d6;
+    padding: 6px;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.socialmidea a .fa-linkedin {
+    background: #0072b1;
+    padding: 6px;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.socialmidea a .fa-youtube {
+    background: #FF0000;
+    padding: 6px;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+}
